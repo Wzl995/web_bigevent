@@ -41,7 +41,7 @@ $(function() {
                 password: $("#form_reg [ name=password]").val(),
                 repassword: $("#form_reg [name=repassword]").val()
             }
-            $.post(' http://www.liulongbin.top:3008/api/reg', data, function(res) {
+            $.post('/api/reg', data, function(res) {
                 if (res.code != 0) {
                     return layer.msg(res.message)
                 }
