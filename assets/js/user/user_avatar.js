@@ -50,6 +50,7 @@ $(function() {
             // 将 Canvas 画布上的内容， 转化为 base64 格式的字符串
             // 2.调用接口，把头像上传到服务器
         $.ajax({
+            // 上传图片的请求一定是PATCH
             method: 'PATCH',
             url: '/my/update/avatar',
             data: {
